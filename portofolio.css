@@ -1,0 +1,636 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #292936;
+    line-height: 1.4;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    padding: 14px 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.logo span {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background: #c084fc;
+    color: white;
+
+    font-weight: bold;
+}
+
+.logo h1 {
+    font-size: 18px;
+}
+
+.menu {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #555;
+
+    padding: 5px 12px;
+    border-radius: 15px;
+
+    font-size: 13px;
+}
+
+.menu a:hover {
+    color: #9333ea;
+    background: #faf5ff;
+}
+
+.contact-btn {
+    text-decoration: none;
+    color: white;
+    background: #222;
+
+    padding: 7px 15px;
+    border-radius: 18px;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 35px 6%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #fff7fc,
+        #f8f5ff
+    );
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.small-title {
+    color: #a855f7;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 8px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    line-height: 1.05;
+}
+
+.hero h2 span {
+    color: #c026d3;
+}
+
+.hero-description {
+    max-width: 450px;
+
+    color: #777;
+
+    font-size: 13px;
+
+    margin: 12px 0 17px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.main-btn,
+.second-btn {
+    padding: 8px 16px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+.main-btn {
+    color: white;
+    background: #a855f7;
+}
+
+.second-btn {
+    color: #444;
+    background: white;
+
+    border: 1px solid #ddd;
+}
+
+
+/* HERO VISUAL */
+
+.hero-image {
+    flex: 1;
+
+    min-height: 190px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 20px;
+}
+
+.shape-one {
+    width: 150px;
+    height: 150px;
+
+    background: #e9d5ff;
+
+    transform: rotate(8deg);
+}
+
+.shape-two {
+    width: 130px;
+    height: 130px;
+
+    background: #fbcfe8;
+
+    transform: rotate(-8deg);
+}
+
+.photo-card {
+    width: 150px;
+    height: 190px;
+
+    padding: 8px;
+
+    position: relative;
+    z-index: 2;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+
+    transform: rotate(3deg);
+}
+
+.photo-placeholder {
+    height: 135px;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #f5d0fe,
+        #ddd6fe
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 45px;
+}
+
+.photo-text {
+    padding: 6px;
+}
+
+.photo-text strong {
+    display: block;
+    font-size: 12px;
+}
+
+.photo-text small {
+    color: #888;
+    font-size: 9px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.tentang,
+.proyek {
+    max-width: 1100px;
+
+    margin: 35px auto;
+
+    padding: 0 6%;
+}
+
+.section-heading {
+    margin-bottom: 18px;
+}
+
+.section-heading > p {
+    color: #a855f7;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 5px;
+}
+
+.section-heading h2 {
+    font-size: 25px;
+    line-height: 1.1;
+}
+
+.section-heading h2 span {
+    color: #c026d3;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-content {
+    display: flex;
+    gap: 15px;
+
+    padding: 18px;
+
+    background: #faf5ff;
+
+    border-radius: 12px;
+}
+
+.about-number {
+    font-size: 25px;
+    color: #d8b4fe;
+    font-weight: bold;
+}
+
+.about-text {
+    font-size: 12px;
+    color: #666;
+}
+
+.about-text p {
+    margin-bottom: 7px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    margin-top: 8px;
+}
+
+.skills span {
+    padding: 4px 9px;
+
+    border-radius: 15px;
+
+    background: white;
+
+    color: #9333ea;
+
+    font-size: 9px;
+
+    border: 1px solid #e9d5ff;
+}
+
+
+/* =========================
+   PROJECT TITLE
+========================= */
+
+.project-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 20px;
+}
+
+.project-info {
+    max-width: 300px;
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   GRID PROJECT
+========================= */
+
+.grid-proyek {
+    display: grid;
+
+    /* MOBILE */
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.kartu {
+    min-height: 150px;
+
+    padding: 17px;
+
+    border-radius: 12px;
+
+    position: relative;
+
+    border: 1px solid #eee;
+
+    transition: .3s;
+}
+
+.kartu:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,.08);
+}
+
+.project-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 19px;
+
+    margin-bottom: 7px;
+}
+
+.project-number {
+    position: absolute;
+
+    top: 12px;
+    right: 15px;
+
+    color: #aaa;
+
+    font-size: 9px;
+}
+
+.kartu h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.kartu > p:not(.project-number) {
+    color: #777;
+
+    font-size: 10px;
+
+    margin-bottom: 8px;
+}
+
+.kartu > span {
+    display: inline-block;
+
+    padding: 3px 7px;
+
+    border-radius: 12px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   CARD COLORS
+========================= */
+
+.pink {
+    background: #fff1f7;
+}
+
+.pink .project-icon,
+.pink span {
+    background: #fbcfe8;
+    color: #be185d;
+}
+
+
+.purple {
+    background: #f5f3ff;
+}
+
+.purple .project-icon,
+.purple span {
+    background: #ddd6fe;
+    color: #7c3aed;
+}
+
+
+.orange {
+    background: #fff7ed;
+}
+
+.orange .project-icon,
+.orange span {
+    background: #fed7aa;
+    color: #c2410c;
+}
+
+
+.blue {
+    background: #eff6ff;
+}
+
+.blue .project-icon,
+.blue span {
+    background: #bfdbfe;
+    color: #1d4ed8;
+}
+
+
+.green {
+    background: #f0fdf4;
+}
+
+.green .project-icon,
+.green span {
+    background: #bbf7d0;
+    color: #15803d;
+}
+
+
+.yellow {
+    background: #fefce8;
+}
+
+.yellow .project-icon,
+.yellow span {
+    background: #fef08a;
+    color: #a16207;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    margin-top: 35px;
+
+    padding: 25px 6%;
+
+    background: #252532;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.footer h2 {
+    font-size: 22px;
+}
+
+.footer h2 span {
+    color: #d946ef;
+}
+
+.footer-right {
+    color: #bbb;
+
+    font-size: 10px;
+}
+
+.footer-right small {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #777;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 600px) {
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu {
+        flex-direction: row;
+    }
+
+    .hero {
+        flex-direction: row;
+        align-items: center;
+
+        min-height: 360px;
+    }
+
+    /* TABLET 2 KOLOM */
+
+    .grid-proyek {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+    }
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 900px) {
+
+    /* DESKTOP 3 KOLOM */
+
+    .grid-proyek {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
